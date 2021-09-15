@@ -1,0 +1,29 @@
+:root {
+  --gray-color: rgb(186, 186, 186);
+  --dark-cyan-color: #0a192f;
+  --shine-cyan-color: #5effff;
+}
+* {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.6 rem;
+  font-family: "Roboto Slab", sans-serif;
+  background-color: var(--dark-cyan-color);
+  color: var(--gray-color);
+}
+.grid {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
