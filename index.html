@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/my_school_logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -46,10 +47,8 @@
                             </div>
                         </li>
                         <li class="list-resp__element">
-                            <div class="header__menu-btn">
-                                <a href="#" class="header__button">
-                                    <div class="hamburger-element"></div>
-                                </a>
+                            <div class="menu-btn">
+                                <div class="menu-btn__burger"></div>
                             </div>
                         </li>
                     </ul>
@@ -73,7 +72,7 @@
                         <h3 class="overview__major">I'm a senior student majoring in automation engineering. I have built many apps for the purposes of monitoring and reporting remotely (also known as IIoT). Now I am an associate researcher of SISTRAIN automation center. Check out our work at <a href="http://sistrain.com/" class="sistrain-info" target="_blank">SISTRAIN</a>.</h3>
                     </div>
                     <div class="overview__container-fourthline">
-                        <h1><strong>Note: This Portfolio webpage is on process, I will update it everyday.</strong></h1>
+                        <h1><strong>Note: This Portfolio webpage is on process, I update it everyday.</strong></h1>
                     </div>
                     <div class="overview__container-button">         
                         <a class="overview__button" href="mailto:tri.hoang.hcmut@gmail.com" rel="noreferrer" target="_blank">My email!</a>
@@ -81,28 +80,78 @@
                 </section>
                 <section class="overview-image">
                     <div class="overview__container-image">
-                        <a href="https://www.linkedin.com/in/trihoang1810/" title="Contact me via LinkedIn" target="_blank" class="overview__img-navigation">
+                        <a href="https://www.linkedin.com/in/trihoang1810/" tabindex ="-1" title="Contact me via LinkedIn" target="_blank" class="overview__img-navigation">
                             <img class="overview__myself" src="./assets/img/myself-1.jpg" alt="My picture">
                         </a>
                     </div>
                 </section>
             </div>
-            <div>
-                <h2>About me</h2>
+            <div class="box-social">
+                <ul class="box-social__list">
+                    <li class="box-social__item">
+                        <a href="https://www.linkedin.com/in/trihoang1810/" target="_blank" title="LinkedIn" class="box-social__item-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="box-social__item">
+                        <a href="https://github.com/trihoang1810" target="_blank" title="Github" class="box-social__item-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="box-social__item">
+                        <a href="https://www.facebook.com/tri.hoang.hcmut/" target="_blank" title="Facebook" class="box-social__item-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="box-social__item">
+                        <div class="box-social__line"></div>
+                    </li>
+
+                </ul>
             </div>
             <div>
-                <h2>Experience</h2>
+                <!-- <h2>About me</h2> -->
             </div>
             <div>
-                <h2>Work</h2>
+                <!-- <h2>Experience</h2> -->
             </div>
             <div>
-                <h2>Get In Touch</h2>
+                <!-- <h2>Work</h2> -->
+            </div>
+            <div>
+                <!-- <h2>Get In Touch</h2> -->
+            </div>
+            <div class="content">
+                <div class="box__popup" id="box__popup">
+                    <div class="box__popup-menu">
+                        <nav class="menu__box">
+                            <ol class="menu__box-list">
+                                <li class="menu__box-item">
+                                    <p class="menu__box-item-count">01.</p>
+                                    <a href="" class="menu__box-item-link">About</a>
+                                </li>
+                                <li class="menu__box-item">
+                                    <p class="menu__box-item-count">02.</p>
+                                    <a href="" class="menu__box-item-link">Experience</a>
+                                </li>
+                                <li class="menu__box-item">
+                                    <p class="menu__box-item-count">03.</p>
+                                    <a href="" class="menu__box-item-link">Work</a>
+                                </li>
+                                <li class="menu__box-item">
+                                    <p class="menu__box-item-count">04.</p>
+                                    <a href="" class="menu__box-item-link">Contact</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
             <h3>ok</h3>
         </footer>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

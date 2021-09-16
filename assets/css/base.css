@@ -5,6 +5,7 @@
 }
 * {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 html {
   box-sizing: border-box;
