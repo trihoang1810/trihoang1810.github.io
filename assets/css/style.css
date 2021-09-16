@@ -1,6 +1,10 @@
 body {
   background-color: var(--dark-cyan-color);
 }
+strong{
+  text-decoration: underline overline;
+  color: #fff;
+}
 .header {
   width: 100%;
   position: fixed;
