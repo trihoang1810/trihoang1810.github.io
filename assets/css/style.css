@@ -27,6 +27,7 @@ body {
   padding: 1rem 0 1rem 1rem;
 }
 .header__container-name h1 {
+  display: block;
   margin: 0 0;
   font-size: 3rem;
   color: var(--shine-cyan-color);
@@ -63,11 +64,67 @@ body {
 .header__container-button:hover {
   background-color: rgba(0, 140, 186, 0.1);
 }
+
+.header__container-list-resp {
+  display: none;
+}
+
+.header__container-button--resp {
+  visibility: false;
+}
+.list-resp__element {
+  margin: auto 10px;
+}
+.header__menu-btn {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-cyan-color);
+  width: 5rem;
+
+  height: 4rem;
+  justify-content: center;
+  transition: border 250ms;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.header__menu-btn:active {
+  background-color: rgba(29, 119, 150, 0.1);
+  border: 2px solid var(--shine-cyan-color);
+  border-radius: 5px;
+  transform: rotate(0.5turn);
+  transition-duration: 1s;
+}
 .header__button {
   color: var(--shine-cyan-color);
   text-decoration: none;
   font-size: 1rem;
   letter-spacing: 0.1rem;
+}
+.hamburger-element {
+  position: relative;
+  height: 2px;
+  width: 30px;
+  background-color: var(--shine-cyan-color);
+}
+.hamburger-element::before {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  content: "";
+  height: 2px;
+  width: 40px;
+  background-color: var(--shine-cyan-color);
+}
+.hamburger-element::after{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  content: "";
+  height: 2px;
+  width: 20px;
+  background-color: var(--shine-cyan-color);
 }
 
 .header__container-item-link {
@@ -94,6 +151,7 @@ body {
   color: var(--shine-cyan-color);
   margin: 0 0.5rem 0 0;
 }
+
 .container__overview {
   display: flex;
   margin: 11.5rem 15rem 0;
@@ -197,29 +255,32 @@ img:hover {
   filter: none;
 }
 @media (max-width: 1000px) {
-  .container__overview{
+  .container__overview {
     flex-direction: column;
     margin: 10rem 5rem;
   }
-  .header__container-name{
-    display: none;
-  }
-  .header__container-nav{
+  .grid {
     width: 90vw;
-    margin: 0 2rem;
   }
-  .header__container-list{
-    justify-content: space-evenly;
+
+  .header__container-nav {
+    width: 250px;
   }
-  .header__container-button{
+  .header__container-list {
     display: none;
+  }
+  .header__container-list-resp {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: right;
+  }
+
+  
+  .overview__name {
+    font-size: 5rem;
   }
   .overview__container-image {
-    width: 23rem;
-    height: 30rem;
-    position: relative;
-    border: 2px solid var(--shine-cyan-color);
-    border-radius: 1rem;
-    /* background-color:rgba(0, 140, 186, 0.5); */
+    display: none;
   }
 }
