@@ -17,6 +17,7 @@ body {
 }
 .header__container-name {
   display: flex;
+  user-select: none;
   align-items: center;
   justify-content: center;
   height: 3.5rem;
@@ -37,9 +38,11 @@ body {
 .header__container-name:hover h1 {
   cursor: pointer;
   color: #ccfffd;
+  border-color: #ccfffd;
 }
 
 .header__container-nav {
+  user-select: none;
   width: 60rem;
 }
 .header__container-list {
