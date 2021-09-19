@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/my_school_logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Tri Minh Hoang | My Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/my_school_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/sass/style.css">
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
+            <div class="header__grid">
                 <div class="header__container-name">
-                    <h1> tmh</h1>
+                   <a href="./index.html"><h1>tmh</h1></a>
                 </div>
-                <div class="header__container-nav">
-                    <ul class="header__container-list">
-                        <li class="header__container-item">
-                            <a class="header__container-item-link" href="#"><span class="item-link__count">01.</span>About</a>
+                <div class="header__container-nav container-nav">
+                    <ul class="container-nav__list list">
+                        <li class="list__item">
+                            <a class="list__item-link" href="#"><span class="item-link__count">01.</span>About</a>
                         </li>
-                        <li class="header__container-item">
-                            <a class="header__container-item-link" href="#"><span class="item-link__count">02.</span>Experience</a>
+                        <li class="list__item">
+                            <a class="list__item-link" href="#"><span class="item-link__count">02.</span>Experience</a>
                         </li>
-                        <li class="header__container-item">
-                            <a class="header__container-item-link" href="#"><span class="item-link__count">03.</span>Work</a>
+                        <li class="list__item">
+                            <a class="list__item-link" href="#"><span class="item-link__count">03.</span>Work</a>
                         </li>
-                        <li class="header__container-item">
-                            <a class="header__container-item-link" href="#"><span class="item-link__count">04.</span>Contact</a>
+                        <li class="list__item">
+                            <a class="list__item-link" href="#"><span class="item-link__count">04.</span>Contact</a>
                         </li>
-                        <li class="header__container-item">
-                            <div class="header__container-button">         
-                                <a class="header__button" href="./assets/ref/my_cv.pdf" target="_blank">My resume</a>
+                        <li class="list__item">
+                            <div class="list__button">         
+                                <a class="button__link" href="./assets/ref/my_cv.pdf" target="_blank">My resume</a>
                             </div>
                         </li>
                     </ul>
-                    <ul class="header__container-list-resp">
+                    <ul class="container-nav__list-resp list-resp">
                         <li class="list-resp__element">
-                            <div class="header__container-button header__container-button--resp">         
-                                <a class="header__button" href="./assets/ref/my_cv.pdf" target="_blank">My resume</a>
+                            <div class="list-resp__button list-resp__button--resp">         
+                                <a class="button__link" href="./assets/ref/my_cv.pdf" target="_blank">My resume</a>
                             </div>
                         </li>
                         <li class="list-resp__element">
@@ -59,34 +60,34 @@
         <main>
             <div class="container__overview">
                 <section class="overview">
-                    <div class="overview__container-firstline">
+                    <div class="overview__container-firstline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1000">
                         <h3 class="overview__firstline">Hi, this is</h3>
                     </div>
-                    <div class="overview__container-secondline">
+                    <div class="overview__container-secondline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1200">
                         <h2 class="overview__name">Tri Minh Hoang</h2>
                     </div>
-                    <div class="container__container-thirdline">
+                    <div class="overview__container-thirdline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1400">
                         <h2 class="overview__in-short">I build things for  web and mobile.</h2>
                     </div>
-                    <div class="overview__container-fourthline">
+                    <div class="overview__container-fourthline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1600">
                         <h3 class="overview__major">I'm a senior student majoring in automation engineering. I have built many apps for the purposes of monitoring and reporting remotely (also known as IIoT). Now I am an associate researcher of SISTRAIN automation center. Check out our work at <a href="http://sistrain.com/" class="sistrain-info" target="_blank">SISTRAIN</a>.</h3>
                     </div>
-                    <div class="overview__container-fourthline">
-                        <h1><strong>Note: This Portfolio webpage is on process, I update it everyday.</strong></h1>
+                    <div class="overview__container-fourthline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1700">
+                        <h2><strong>Note: This Portfolio webpage is on process, I update it everyday.</strong></h2>
                     </div>
-                    <div class="overview__container-button">         
+                    <div class="overview__container-button" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1400">         
                         <a class="overview__button" href="mailto:tri.hoang.hcmut@gmail.com" rel="noreferrer" target="_blank">My email!</a>
                     </div>
                 </section>
-                <section class="overview-image">
+                <section class="overview-image" data-aos ="fade-right" data-aos-oce="true" data-aos-duration="1000">
                     <div class="overview__container-image">
                         <a href="https://www.linkedin.com/in/trihoang1810/" tabindex ="-1" title="Contact me via LinkedIn" target="_blank" class="overview__img-navigation">
-                            <img class="overview__myself" src="./assets/img/myself-1.jpg" alt="My picture">
+                            <div class="overview__myself"></div>
                         </a>
                     </div>
                 </section>
             </div>
-            <div class="box-social">
+            <div class="box-social"data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1000">
                 <ul class="box-social__list">
                     <li class="box-social__item">
                         <a href="https://www.linkedin.com/in/trihoang1810/" target="_blank" title="LinkedIn" class="box-social__item-link">
@@ -153,5 +154,12 @@
         </footer>
     </div>
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

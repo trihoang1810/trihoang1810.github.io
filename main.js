@@ -1,15 +1,18 @@
 const menuBtn = document.querySelector('.menu-btn');
-const boxPopUp = document.querySelector('.box__popup');
-
+const content = document.querySelector('.content');
+const boxPopup =document.querySelector('.box__popup');
 let menuOpen = false;
+
 menuBtn.addEventListener('click',()=>{
     if(!menuOpen){
         menuBtn.classList.add('open');
+        boxPopup.classList.add('activate');
         document.body.classList.add('blur');
-        boxPopUp.classList.add('activate');
+        content.classList.add('pop');
         menuOpen=true;
     } else {
-        boxPopUp.classList.remove('activate');
+        content.classList.remove('pop');
+        boxPopup.classList.remove('activate');
         menuBtn.classList.remove('open');
         document.body.classList.remove('blur');
         menuOpen=false;
