@@ -502,3 +502,252 @@ strong {
     }
   }
 }
+// GENERIC SECTIONS
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8rem 9vw 4rem;
+  scroll-margin-top: 12rem; // offset for fixed header
+
+  &__title {
+    font-size: 2.6rem;
+    letter-spacing: 0.2rem;
+    color: #ededed;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  &__count {
+    color: $shine-cyan-color;
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+
+  &__body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    color: whitesmoke;
+    letter-spacing: 0.06rem;
+    line-height: 2.8rem;
+  }
+}
+
+.about {
+  &__highlights {
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
+.experience {
+  &__timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+  }
+
+  &__item {
+    border: 1px solid rgba(94, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 2.2rem;
+    background: rgba(5, 23, 51, 0.35);
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    gap: 2rem;
+  }
+
+  &__meta h3 {
+    font-size: 2rem;
+    color: #ededed;
+    margin-bottom: 0.6rem;
+  }
+
+  &__role {
+    font-size: 1.5rem;
+    color: $gray-color;
+    margin: 0.2rem 0 0.6rem;
+  }
+
+  &__time {
+    font-size: 1.3rem;
+    color: rgba(186, 186, 186, 0.8);
+  }
+
+  &__detail ul {
+    padding-left: 2rem;
+  }
+
+  &__chips {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  &__note {
+    margin-top: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+  }
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(94, 255, 255, 0.35);
+  color: $shine-cyan-color;
+  font-size: 1.1rem;
+  letter-spacing: 0.08rem;
+}
+
+.work {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  &__card {
+    border: 1px solid rgba(94, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 2.2rem;
+    background: rgba(5, 23, 51, 0.35);
+    transition: $transition;
+
+    h3 {
+      font-size: 1.9rem;
+      color: #ededed;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.45rem;
+      line-height: 2.6rem;
+      color: whitesmoke;
+    }
+
+    ul {
+      padding-left: 2rem;
+      margin-top: 1.2rem;
+
+      li {
+        margin-bottom: 0.6rem;
+      }
+    }
+
+    &:hover {
+      border-color: rgba(94, 255, 255, 0.5);
+      transform: translateY(-4px);
+    }
+  }
+}
+
+.contact {
+  &__wrap {
+    display: flex;
+  }
+
+  &__card {
+    width: 100%;
+    max-width: 720px;
+    border: 1px solid rgba(94, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 2.6rem;
+    background: rgba(5, 23, 51, 0.35);
+
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      color: whitesmoke;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 2rem 0 2.6rem;
+
+    li {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+
+      span {
+        color: $shine-cyan-color;
+        margin-right: 0.8rem;
+      }
+
+      a {
+        color: $gray-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $shine-cyan-color;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    height: 4.8rem;
+    border: 1px solid $shine-cyan-color;
+    border-radius: 0.6rem;
+    color: $shine-cyan-color;
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    background-color: $dark-cyan-color;
+    transition: background-color 250ms;
+
+    &:hover {
+      background-color: rgba(100, 255, 218, 0.1);
+    }
+  }
+}
+
+.footer {
+  padding: 4rem 0 6rem;
+  text-align: center;
+
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    color: rgba(186, 186, 186, 0.7);
+    margin: 0;
+  }
+}
+
+// Responsive tweaks for new sections
+@media (max-width: 1024px) {
+  .work__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 739px) {
+  .section {
+    padding: 7rem 6vw 3rem;
+  }
+
+  .experience__item {
+    grid-template-columns: 1fr;
+  }
+
+  .work__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous">
     <title>Tri Minh Hoang | My Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,97 +23,127 @@
         <header class="header">
             <div class="header__grid">
                 <div class="header__container-name">
-                   <a href="./index.html"><h1>tmh</h1></a>
+                   <a href="#home" data-scroll><h1>tmh</h1></a>
                 </div>
+
                 <div class="header__container-nav container-nav">
+                    <!-- Desktop nav -->
                     <ul class="container-nav__list list">
                         <li class="list__item">
-                            <a class="list__item-link" href="#"><span class="item-link__count">01.</span>About</a>
+                            <a class="list__item-link" href="#about" data-scroll>
+                                <span class="item-link__count">01.</span>About
+                            </a>
                         </li>
                         <li class="list__item">
-                            <a class="list__item-link" href="#"><span class="item-link__count">02.</span>Experience</a>
+                            <a class="list__item-link" href="#experience" data-scroll>
+                                <span class="item-link__count">02.</span>Experience
+                            </a>
                         </li>
                         <li class="list__item">
-                            <a class="list__item-link" href="#"><span class="item-link__count">03.</span>Work</a>
+                            <a class="list__item-link" href="#work" data-scroll>
+                                <span class="item-link__count">03.</span>Work
+                            </a>
                         </li>
                         <li class="list__item">
-                            <a class="list__item-link" href="#"><span class="item-link__count">04.</span>Contact</a>
+                            <a class="list__item-link" href="#contact" data-scroll>
+                                <span class="item-link__count">04.</span>Contact
+                            </a>
                         </li>
                         <li class="list__item">
                             <div class="list__button">         
-                                <a class="button__link" href="./assets/ref/my_cv.pdf" target="_blank">My resume</a>
+                                <a class="button__link" href="./assets/ref/my_cv.pdf" target="_blank" rel="noreferrer">
+                                    My resume
+                                </a>
                             </div>
                         </li>
                     </ul>
+
+                    <!-- Mobile header actions -->
                     <ul class="container-nav__list-resp list-resp">
                         <li class="list-resp__element">
                             <div class="list-resp__button list-resp__button--resp">         
-                                <a class="button__link" href="./assets/ref/my_cv.pdf" target="_blank">My resume</a>
+                                <a class="button__link" href="./assets/ref/my_cv.pdf" target="_blank" rel="noreferrer">
+                                    My resume
+                                </a>
                             </div>
                         </li>
                         <li class="list-resp__element">
-                            <div class="menu-btn">
+                            <div class="menu-btn" aria-label="Open menu" role="button" tabindex="0">
                                 <div class="menu-btn__burger"></div>
                             </div>
                         </li>
                     </ul>
-                    
                 </div>
             </div>
         </header>
+
         <main>
-            <div class="container__overview">
+            <!-- HERO / OVERVIEW -->
+            <div class="container__overview" id="home">
                 <section class="overview">
-                    <div class="overview__container-firstline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1000">
+                    <div class="overview__container-firstline" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
                         <h3 class="overview__firstline">Hi, this is</h3>
                     </div>
-                    <div class="overview__container-secondline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1200">
+                    <div class="overview__container-secondline" data-aos="fade-right" data-aos-once="true" data-aos-duration="1200">
                         <h2 class="overview__name">Tri Minh Hoang</h2>
                     </div>
-                    <div class="overview__container-thirdline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1400">
-                        <h2 class="overview__in-short">I build things for  web and mobile.</h2>
+                    <div class="overview__container-thirdline" data-aos="fade-right" data-aos-once="true" data-aos-duration="1400">
+                        <h2 class="overview__in-short">I build things for web and industrial systems.</h2>
                     </div>
-                    <div class="overview__container-fourthline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1600">
-                        <h3 class="overview__major">I'm a senior student majoring in automation engineering. I have built many apps for the purposes of monitoring and reporting remotely (also known as IIoT). Now I am an associate researcher of SISTRAIN automation center. Check out our work at <a href="http://sistrain.com/" class="sistrain-info" target="_blank">SISTRAIN</a>.</h3>
+                    <div class="overview__container-fourthline" data-aos="fade-right" data-aos-once="true" data-aos-duration="1600">
+                        <h3 class="overview__major">
+                            Automation engineer with experience in both OEM and end-user environments, focused on building reliable
+                            control and monitoring solutions and translating complex technical value into business outcomes.
+                        </h3>
                     </div>
-                    <div class="overview__container-fourthline" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1700">
-                        <h2><strong>Note: This Portfolio webpage is on process, I update it everyday.</strong></h2>
+                    <div class="overview__container-fourthline" data-aos="fade-right" data-aos-once="true" data-aos-duration="1700">
+                        <h2><strong>Note: This portfolio is actively evolving.</strong></h2>
                     </div>
-                    <div class="overview__container-button" data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1400">         
-                        <a class="overview__button" href="mailto:tri.hoang.hcmut@gmail.com" rel="noreferrer" target="_blank">My email!</a>
+                    <div class="overview__container-button" data-aos="fade-right" data-aos-once="true" data-aos-duration="1400">         
+                        <a class="overview__button" href="mailto:tri.hoang.hcmut@gmail.com" rel="noreferrer" target="_blank">
+                            My email!
+                        </a>
                     </div>
                 </section>
-                <section class="overview-image" data-aos ="fade-right" data-aos-oce="true" data-aos-duration="1000">
+
+                <section class="overview-image" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
                     <div class="overview__container-image">
-                        <a href="https://www.linkedin.com/in/trihoang1810/" tabindex ="-1" title="Contact me via LinkedIn" target="_blank" class="overview__img-navigation">
+                        <a href="https://www.linkedin.com/in/trihoang1810/" tabindex="-1" title="Contact me via LinkedIn"
+                           target="_blank" rel="noreferrer" class="overview__img-navigation">
                             <div class="overview__myself"></div>
                         </a>
                     </div>
                 </section>
             </div>
-            <div class="box-social"data-aos ="fade-right" data-aos-oce="true"  data-aos-duration="1000">
+
+            <!-- SOCIAL (desktop) -->
+            <div class="box-social" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
                 <ul class="box-social__list">
                     <li class="box-social__item">
-                        <a href="https://www.linkedin.com/in/trihoang1810/" target="_blank" title="LinkedIn" class="box-social__item-link">
+                        <a href="https://www.linkedin.com/in/trihoang1810/" target="_blank" rel="noreferrer"
+                           title="LinkedIn" class="box-social__item-link">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
                     <li class="box-social__item">
-                        <a href="https://github.com/trihoang1810" target="_blank" title="Github" class="box-social__item-link">
+                        <a href="https://github.com/trihoang1810" target="_blank" rel="noreferrer"
+                           title="Github" class="box-social__item-link">
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
                     <li class="box-social__item">
-                        <a href="https://www.facebook.com/tri.hoang.hcmut/" target="_blank" title="Facebook" class="box-social__item-link">
+                        <a href="https://www.facebook.com/tri.hoang.hcmut/" target="_blank" rel="noreferrer"
+                           title="Facebook" class="box-social__item-link">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li class="box-social__item">
                         <div class="box-social__line"></div>
                     </li>
-
                 </ul>
             </div>
+
+            <!-- MOBILE SLIDE MENU OVERLAY -->
             <div class="content">
                 <div class="box__popup" id="box__popup">
                     <div class="box__popup-menu">
@@ -119,47 +151,176 @@
                             <ol class="menu__box-list">
                                 <li class="menu__box-item">
                                     <p class="menu__box-item-count">01.</p>
-                                    <a href="" class="menu__box-item-link">About</a>
+                                    <a href="#about" class="menu__box-item-link" data-scroll>About</a>
                                 </li>
                                 <li class="menu__box-item">
                                     <p class="menu__box-item-count">02.</p>
-                                    <a href="" class="menu__box-item-link">Experience</a>
+                                    <a href="#experience" class="menu__box-item-link" data-scroll>Experience</a>
                                 </li>
                                 <li class="menu__box-item">
                                     <p class="menu__box-item-count">03.</p>
-                                    <a href="" class="menu__box-item-link">Work</a>
+                                    <a href="#work" class="menu__box-item-link" data-scroll>Work</a>
                                 </li>
                                 <li class="menu__box-item">
                                     <p class="menu__box-item-count">04.</p>
-                                    <a href="" class="menu__box-item-link">Contact</a>
+                                    <a href="#contact" class="menu__box-item-link" data-scroll>Contact</a>
                                 </li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
+
+            <!-- NEW SECTIONS -->
+            <section id="about" class="section about" data-aos="fade-up" data-aos-once="true" data-aos-duration="900">
+                <h2 class="section__title"><span class="section__count">01.</span> About Me</h2>
+                <div class="section__body">
+                    <p>
+                        I am an automation engineer with hands-on experience spanning OEM solution development and end-user
+                        operations. I enjoy bridging control engineering, software, and project execution to deliver systems that are
+                        reliable, scalable, and easy for teams to operate.
+                    </p>
+                    <p>
+                        I am currently pursuing an MBA at the University of Economics Ho Chi Minh City and hold a Bachelor of
+                        Automation and Control Engineering from Ho Chi Minh University of Technology with a GPA of 8.28/10. :contentReference[oaicite:1]{index=1}
+                    </p>
+                    <ul class="about__highlights">
+                        <li>Focus areas: industrial automation, IIoT-style monitoring/reporting, and solution consulting.</li>
+                        <li>Comfortable translating complex technical concepts for non-technical stakeholders.</li>
+                        <li>Strong bias for structured execution: planning, testing, commissioning, and documentation.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="experience" class="section experience" data-aos="fade-up" data-aos-once="true" data-aos-duration="900">
+                <h2 class="section__title"><span class="section__count">02.</span> Experience</h2>
+
+                <div class="experience__timeline">
+                    <article class="experience__item">
+                        <div class="experience__meta">
+                            <h3>Beckhoff Automation</h3>
+                            <p class="experience__role">Customer Development cum Solutions and Application Engineer</p>
+                            <p class="experience__time">Oct 2023 - Sept 2025</p>
+                        </div>
+                        <div class="experience__detail">
+                            <ul>
+                                <li>Developed customized automation solutions and tailored control architectures across industries.</li>
+                                <li>Conducted proof-of-concept, troubleshooting, and customer-facing technical workshops.</li>
+                                <li>Supported sales cycles with technical value mapping and solution positioning.</li>
+                            </ul>
+                            <div class="experience__chips">
+                                <span class="chip">Siemens / Beckhoff</span>
+                                <span class="chip">Oil & Gas</span>
+                                <span class="chip">Plastics</span>
+                                <span class="chip">Open architecture</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="experience__item">
+                        <div class="experience__meta">
+                            <h3>Suntory PepsiCo Vietnam Beverage</h3>
+                            <p class="experience__role">Automation Supervisor - GET Program 2022</p>
+                            <p class="experience__time">Jul 2022 - Oct 2023</p>
+                        </div>
+                        <div class="experience__detail">
+                            <ul>
+                                <li>Planned and executed maintenance strategies for automated production systems.</li>
+                                <li>Upgraded PLC, HMI, MES, and energy monitoring solutions to improve reliability and reporting.</li>
+                                <li>Delivered measurable improvement initiatives on line performance.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="experience__note">
+                    <p>
+                        Key achievements include a Kaizen initiative reducing water usage by 10m³/day and improving OEE of a
+                        production line from 70% to 82%. :contentReference[oaicite:2]{index=2}
+                    </p>
+                </div>
+            </section>
+
+            <section id="work" class="section work" data-aos="fade-up" data-aos-once="true" data-aos-duration="900">
+                <h2 class="section__title"><span class="section__count">03.</span> Selected Work</h2>
+
+                <div class="work__grid">
+                    <article class="work__card">
+                        <h3>Mud Pumps VFD & PLC Modernization</h3>
+                        <p>
+                            Designed and implemented industrial PC and variable frequency drive control for six mud pumps,
+                            rectifiers, and auxiliaries. Converted legacy Step 7 statement list logic into optimized, maintainable
+                            control with robust safety interlocks. :contentReference[oaicite:3]{index=3}
+                        </p>
+                        <ul>
+                            <li>Control responsibility switching and anti-synchronization logic.</li>
+                            <li>Commissioning, integration, and training with on-rig teams.</li>
+                        </ul>
+                    </article>
+
+                    <article class="work__card">
+                        <h3>Injection Blow-Molding Automation Platform</h3>
+                        <p>
+                            Built automation architecture using Beckhoff TwinCAT PPF; implemented real-time proportional integral derivative
+                            control for 62 heating zones with multi-vendor integration, aligned with UL and Euromap requirements. :contentReference[oaicite:4]{index=4}
+                        </p>
+                        <ul>
+                            <li>52 thermocouples with solid state relay outputs.</li>
+                            <li>Designed for future Internet of Things and enterprise integration.</li>
+                        </ul>
+                    </article>
+
+                    <article class="work__card">
+                        <h3>Surface Logging System Redesign</h3>
+                        <p>
+                            Led requirement definition and testing strategy for redundant industrial PC architecture with sub-second failover,
+                            validated with simulated data loads and field-ready procedures. :contentReference[oaicite:5]{index=5}
+                        </p>
+                        <ul>
+                            <li>Redundancy design and performance testing.</li>
+                            <li>Customer-facing technical leadership.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact" data-aos="fade-up" data-aos-once="true" data-aos-duration="900">
+                <h2 class="section__title"><span class="section__count">04.</span> Get In Touch</h2>
+                <div class="contact__wrap">
+                    <div class="contact__card">
+                        <p>
+                            If you want to discuss an automation project, industrial monitoring solution, or a cross-functional role
+                            blending engineering and customer development, feel free to reach out.
+                        </p>
+                        <ul class="contact__list">
+                            <li><span>Email:</span> <a href="mailto:tri.hoang.hcmut@gmail.com">tri.hoang.hcmut@gmail.com</a></li>
+                            <li><span>Phone:</span> (+84) 352 015 129</li>
+                            <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/trihoang1810/" target="_blank" rel="noreferrer">trihoang1810</a></li>
+                            <li><span>Location:</span> Ho Chi Minh City, Vietnam</li>
+                        </ul>
+                        <a class="contact__cta" href="mailto:tri.hoang.hcmut@gmail.com">Say Hello</a>
+                    </div>
+                </div>
+            </section>
+
             <div id="root"></div>
-            <div>
-                <!-- <h2>About me</h2> -->
-            </div>
-            <div>
-                <!-- <h2>Experience</h2> -->
-            </div>
-            <div>
-                <!-- <h2>Work</h2> -->
-            </div>
-            <div>
-                <!-- <h2>Get In Touch</h2> -->
-            </div>
         </main>
-        <footer>
-            <h3>ok</h3>
+
+        <footer class="footer">
+            <p>© 2025 Tri Minh Hoang. Built with love for clean systems.</p>
         </footer>
     </div>
+
     <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+            crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
